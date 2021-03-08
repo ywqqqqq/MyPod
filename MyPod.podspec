@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  #spec.resource  = "ThirdParty/ShareSDK.bundle"
+  spec.resource  = "ThirdParty/ShareSDK.bundle"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
