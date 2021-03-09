@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyPod"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.4"
   spec.summary      = "ACRequest request too."
 
   # This description is used to generate tags and improve search results.
