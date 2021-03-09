@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyPod"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.1"
   spec.summary      = "ACRequest request too."
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "ThirdParty/ShareSDK.bundle"
+  
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -117,11 +117,10 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.frameworks = 'QuartzCore', 'CoreData'
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+  spec.resources = 'ios/ThirdParty/ShareSDK/**/*.{bundle}'
+  spec.frameworks = 'SystemConfiguration','CoreTelephony'
+  spec.libraries = 'z','sqlite3','c++'
+  spec.vendored_frameworks = 'ThirdParty/**/*.framework'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
